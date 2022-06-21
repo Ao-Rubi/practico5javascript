@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <header class="container py-5">
+        <h1 class="display-1 text-dark text-center">Persona, genearcion o algo asi</h1>
+        <hr>
+    </header>
+
+    <main class="container">
+        <section>
+            <form class="my-5 bg-light rounded p-3">
+                <div class="mb-3">
+                    <label for="nombreIngresado" class="form-lable d-block text-start">Ingrese los datos</label>
+
+                    <div class="d-flex">
+                        <input type="text" placeholder="nombre" class="form-control" id="nombreIngresado">
+                        <input type="number" placeholder="edad" class="form-control" id="edadIngresada">
+                        <input type="text" placeholder="sexo" class="form-control" id="sexoIngresado">
+                        <input type="text" placeholder="peso (kg)" class="form-control" id="pesoIngresado">
+                        <input type="text" placeholder="altura" class="form-control" id="alturaIngresada">
+                        <input type="text" placeholder="año de nacimiento" class="form-control" id="anioIngresado">
+
+                        <button class="btn btn-outline" id="botonEnviar" type="button" onclick="datosDePersona()">Enviar</button>                   
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+        <section class="container mb-5">
+            <button class="btn btn-outline-danger" onclick="muestraGeneracion()">Mostrar Generacion</button>
+            <button class="btn btn-outline-danger" onclick="esMayorDeEdad()">Eres mayor de edad?</button>
+        </section>
+    </main>
+
+
+    <footer class="bg-dark text-light text-center py-4">
+        <p>&copy;Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="/js/ejercicios/ejercicio-2-tp5.js"></script>
+</body>
+</html>
