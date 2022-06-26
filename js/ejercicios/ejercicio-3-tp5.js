@@ -1,4 +1,5 @@
 let numeroClase = 0;
+let arregloLista = [];
 
 function agregarTarea() {
     let tarea = document.getElementById("ingresarTarea").value;

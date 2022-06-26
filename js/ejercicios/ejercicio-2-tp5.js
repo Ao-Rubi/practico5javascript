@@ -62,4 +62,14 @@ function datosDePersona(Fnombre, Fedad, Fsexo, Fpeso, Faltura, Fnacimiento) {
     Fnacimiento = document.querySelector("#anioIngresado").value;
 
     const nuevaPersona = new Persona(Fnombre,Fedad,Fsexo,Fpeso,Faltura,Fnacimiento);
+    return nuevaPersona
 }
+
+let enviar = document.getElementById("botonEnviar");
+enviar.addEventListener("click", datosDePersona)
+
+let obtenerGeneracion = document.getElementById("generacion");
+obtenerGeneracion.addEventListener("click", ()=> {nuevaPersona.mostrarGeneracion()})
+
+
+

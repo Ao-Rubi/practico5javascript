@@ -8,12 +8,12 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style-ej-2.css">
 </head>
 <body>
     
     <header class="container py-5">
-        <h1 class="display-1 text-dark text-center">Persona, genearcion o algo asi</h1>
+        <h1 class="display-1 text-light text-center">Generacion</h1>
         <hr>
     </header>
 
@@ -23,24 +23,34 @@
                 <div class="mb-3">
                     <label for="nombreIngresado" class="form-lable d-block text-start">Ingrese los datos</label>
 
-                    <div class="d-flex">
+                    <div class="my-1">
                         <input type="text" placeholder="nombre" class="form-control" id="nombreIngresado">
-                        <input type="number" placeholder="edad" class="form-control" id="edadIngresada">
-                        <input type="text" placeholder="sexo" class="form-control" id="sexoIngresado">
-                        <input type="text" placeholder="peso (kg)" class="form-control" id="pesoIngresado">
-                        <input type="text" placeholder="altura" class="form-control" id="alturaIngresada">
-                        <input type="text" placeholder="año de nacimiento" class="form-control" id="anioIngresado">
-
-                        <button class="btn btn-outline" id="botonEnviar" type="button" onclick="datosDePersona()">Enviar</button>                   
                     </div>
+                    <div class="my-1">
+                        <input type="number" placeholder="edad" class="form-control" id="edadIngresada">
+                    </div>
+                    <div class="my-1">
+                        <input type="text" placeholder="sexo" class="form-control" id="sexoIngresado">
+                    </div>
+                    <div class="my-1">
+                        <input type="text" placeholder="peso (kg)" class="form-control" id="pesoIngresado">
+                    </div>
+                    <div class="my-1">
+                        <input type="text" placeholder="altura" class="form-control" id="alturaIngresada">
+                    </div>
+                    <div class="my-1">
+                        <input type="text" placeholder="año de nacimiento" class="form-control" id="anioIngresado">
+                    </div>
+
+                    <button class="btn btn-outline" id="botonEnviar" type="button">Enviar</button>
 
                 </div>
             </form>
         </section>
 
         <section class="container mb-5">
-            <button class="btn btn-outline-danger" onclick="muestraGeneracion()">Mostrar Generacion</button>
-            <button class="btn btn-outline-danger" onclick="esMayorDeEdad()">Eres mayor de edad?</button>
+            <button class="btn btn-outline-danger" id="generacion">Mostrar Generacion</button>
+            <button class="btn btn-outline-danger" id="mayorDeEdad">Eres mayor de edad?</button>
         </section>
     </main>
 
