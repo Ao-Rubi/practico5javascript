@@ -15,3 +15,5 @@ function agregarTarea() {
 
     numeroClase++
 }
+
+// Averiguar como eliminar elementos con una misma clase al apretar un boton.

@@ -71,5 +71,8 @@ enviar.addEventListener("click", datosDePersona)
 let obtenerGeneracion = document.getElementById("generacion");
 obtenerGeneracion.addEventListener("click", ()=> {nuevaPersona.mostrarGeneracion()})
 
+// Preguntar si se puede usar las funciones de la clase al apretar un boton y de que forma.
+// Y en caso de estar mal la forma de crear el objeto, preguntar como se hace.
+
 
 
